@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hrithik Krishna - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>           
+      <div id="home">
+        <div class="profile_name">
+           Hrithik Krishna
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          hrithikkrishna100@gmail.com
+          </div>
+
+          <div style="clear:both;"></div> 
+          
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+            +13456764598
+          </div>
+        </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.pinimg.com/originals/92/c9/50/92c950856ba2fc2f84e7858eaf63cfb8.png" class="profile_image"/>
+      </div>
+
+      <div style="font-family: 'Courier New', Courier, monospace;">
+          <h1>
+            Hi, I'm Mathew Murdock! 
+          </h1>
+          <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            I am a blind Lawyer working in a self established law firm called Nelson and Murdock, located in Hell's Kitchen, New York.
+            I have a few years of experience working cases for the innocent and recently against a man notorious for his influence over the criminal underworld.
+            I'm also a crime fighting vigilante at night and is thinking of shifting their career path into Tech and IT. 
+            Full Stack Development is an interesting field that catches my eye. You're probably wondering why a blind man would want to work 
+            computers and you're right, but there are other ways to see <span style="font-weight: bold"> ;) </span>.    
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p> 3 years experience </p>
+        </div>
+        
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Legal Advocacy for the Underprivileged</h3>
+            <ul>
+              <li>Represented marginalized communities in pro bono cases, advocating for fair treatment and access to justice.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Community Outreach and Education initiative</h3>
+            <ul>
+              <li>Developed and implemented a program to educate local residents about their legal rights, fostering empowerment and awareness within the community.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Strategic Litigation to Combat Corporate Corruption</h3>
+            <ul>
+              <li>Led a legal team in high-profile cases against corrupt corporations, securing favorable outcomes and promoting accountability in the business sector.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Matthew's unwavering dedication to justice is truly inspiring. 
+          His exceptional legal skills and compassion for the underprivileged make him 
+          a formidable advocate in any courtroom."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "I had the pleasure of witnessing Matthew's tireless efforts in our community outreach program.
+          His passion for educating others about their legal rights is unmatched,
+          and his impact is undeniable."
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          "Matthew's strategic approach to litigation is unparalleled. 
+          He navigates complex legal issues with precision and integrity, consistently 
+          achieving favorable outcomes for his clients. A true asset to any legal team."
+           <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3> Your recommendation is very much appreciated :) </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
